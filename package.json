@@ -1,0 +1,29 @@
+{
+    "name" : "contractor",
+    "version" : "0.0.1",
+    "description" : "Stricter messages facility for Javascript",
+    "main" : "./index.js",
+    "keywords" : [
+        "strict", "Stricter", "types", "typed"
+    ],
+    "repository" : {
+        "type" : "git",
+        "url" : "https://github.com/romansky/iron"
+    },
+    "dependencies" : {
+        "useful" : ">= 0.0.4",
+        "node-logr" : ">= 0.0.3"
+    },
+    "devDependencies" : {
+	   "jasmine-node": ">= 1.0.26"
+    },
+    "scripts" : {},
+    "engine" : {"node" : ">=0.4.0"},
+    "author" : {
+        "name" : "Roman Landenband",
+        "email" : "roman.land@gmail.com",
+        "url" : "www.romansky.me"
+    }
+}
+
+
