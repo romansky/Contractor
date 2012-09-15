@@ -22,19 +22,19 @@ Create a "contract" with two required parameters
 
 **Create** Contractor.Create(String, <Contractor.Required / Contractor.Optional>..)
 
-		LoginMessageContract = Contractor.Create("LoginMessage", Contractor.Required("user name"), Contractor.Required("password"))
+	LoginMessageContract = Contractor.Create("LoginMessage", Contractor.Required("user name"), Contractor.Required("password"))
 
 Execute the contract
 
-		console.log LoginMessageContract("knock-knock","itsme!")
-		=> ["LoginMessage", "knock-knock","itsme!"]
+	console.log LoginMessageContract("knock-knock","itsme!")
+	=> ["LoginMessage", "knock-knock","itsme!"]
 
 Bad contract, bad!
 
-		console.log LoginMessageContract("knock-knock")
-		=> null
+	console.log LoginMessageContract("knock-knock")
+	=> null
 
 Also, you can always check the name of the contract by calling the toString method
 
-		LoginMessageContract.toString()
-		=> "LoginMessage"
+	LoginMessageContract.toString()
+	=> "LoginMessage"
