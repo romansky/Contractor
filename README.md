@@ -5,9 +5,14 @@ Stricter messages in Javascript
 
 ## Why?
 
-Sometimes you need to communicate an API for, where you want to desribe the contract of the API and enforce optional and required parameters.
-Contractor will generate a wrapper function for this contract and make sure the api is used as designed
+In a dynamic language world, you might need to declare a contract for communicating with your APIs, create contracts with Contractor and use them, with:
 
+ * server + client side
+ * pub / sub implementation
+ * external API's
+ * Socket.IO communication
+
+Contractor will generate a wrapper function for this "contract" and make sure the api is used as designed, no more, no less.
 
 ## Installation
 
