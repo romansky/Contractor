@@ -5,8 +5,8 @@ Stricter messages in Javascript
 
 ## Why?
 
-Sometimes you need a "typed" message bus, where you want to desrib the contract of the API and enforce optional and required parameters.
-Contractor will general the wrapper for this contract and make sure you are sending and recieving information as expected
+Sometimes you need to communicate an API for, where you want to desribe the contract of the API and enforce optional and required parameters.
+Contractor will generate a wrapper function for this contract and make sure the api is used as designed
 
 
 ## Installation
