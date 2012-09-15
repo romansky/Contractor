@@ -11,11 +11,11 @@ Contractor will generate a wrapper function for this contract and make sure the 
 
 ## Installation
 
-		npm install contractor
+	npm install contractor
 
 ## Usage
 
-		{Contractor} = require 'contractor'
+	{Contractor} = require 'contractor'
 
 
 Create a "contract" with two required parameters
