@@ -7,8 +7,8 @@ exports.Contractor = class Contractor
 
 	@Create : (name, params...)->
 		params = params || []
-		message = [name]
 		envelope = (values...)->
+			message = [name]
 			for param in params
 				value = values.shift()
 				switch param.paramType

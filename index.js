@@ -24,13 +24,13 @@
     };
 
     Contractor.Create = function() {
-      var envelope, message, name, params;
+      var envelope, name, params;
       name = arguments[0], params = 2 <= arguments.length ? __slice.call(arguments, 1) : [];
       params = params || [];
-      message = [name];
       envelope = function() {
-        var param, value, values, _i, _len;
+        var message, param, value, values, _i, _len;
         values = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
+        message = [name];
         for (_i = 0, _len = params.length; _i < _len; _i++) {
           param = params[_i];
           value = values.shift();
