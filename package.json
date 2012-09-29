@@ -1,6 +1,6 @@
 {
     "name" : "contractor",
-    "version" : "0.0.2",
+    "version" : "0.0.3",
     "description" : "Stricter messages facility for Javascript",
     "main" : "./index.js",
     "keywords" : [
@@ -8,7 +8,7 @@
     ],
     "repository" : {
         "type" : "git",
-        "url" : "https://github.com/romansky/iron"
+        "url" : "https://github.com/romansky/Contractor"
     },
     "dependencies" : {
         "useful" : ">= 0.0.4",
