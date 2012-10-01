@@ -43,3 +43,20 @@ Also, you can always check the name of the contract by calling the toString meth
 
 	LoginMessageContract.toString()
 	=> "LoginMessage"
+
+
+## Layer
+
+One option to use Contracts is a Laweyer
+
+	Lawyer = require('contractor').Lawyer
+
+Create an object that will handle the different events
+
+	client = {
+		LoginMessage : (userName, password)-> # do something here...
+	}
+
+Use the lawyer on the contract and client
+
+	Layer.Read LoginMessageContract("its me!","white rabbit"), client

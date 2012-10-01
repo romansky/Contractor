@@ -1,6 +1,6 @@
 {
     "name" : "contractor",
-    "version" : "0.0.3",
+    "version" : "0.1.0",
     "description" : "Stricter messages facility for Javascript",
     "main" : "./index.js",
     "keywords" : [

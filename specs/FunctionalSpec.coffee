@@ -1,4 +1,5 @@
 {Contractor} = require '../'
+Lawyer = require('../').Lawyer
 
 describe "Contractor", ->
 
@@ -14,4 +15,21 @@ describe "Contractor", ->
 	it "needs to enforce a required parameter and return null when it didnt recieve it",->
 		contract = Contractor.Create("Simple",Contractor.Required("first param"), Contractor.Required("second param"), Contractor.Optional("third param"))
 		res = contract("first")
-		expect(res).toEqual(null)
+		expect(res.length).toEqual(1)
+
+
+	describe "Lawyer",->
+
+		it "can read a contract",->
+			contract = Contractor.Create("Simple",Contractor.Required("first param"), Contractor.Required("second param"), Contractor.Optional("third"))
+			argsCount = 0
+			Lawyer.Read contract("aaa","bbbb","ccc"), {
+				Simple: ()-> argsCount += arguments.length
+			}
+			expect(argsCount).toEqual(3)
+
+			argsCount = 0
+			Lawyer.Read contract("aaa"), {
+				Simple: ()-> argsCount += arguments.length
+			}
+			expect(argsCount).toEqual(0)
