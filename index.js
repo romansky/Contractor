@@ -38,7 +38,7 @@
           value = values.shift();
           switch (param.paramType) {
             case "required":
-              if (!value) {
+              if (value === void 0) {
                 logr.error("Bad arguments for contract \"" + name + "\", missing param:\"" + param.paramType + "\"-\"" + param.description + "\" args:" + (JSON.stringify(arguments)));
                 return [name];
               } else {

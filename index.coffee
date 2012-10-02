@@ -13,7 +13,7 @@ exports.Contractor = class Contractor
 				value = values.shift()
 				switch param.paramType
 					when "required"
-						if not value
+						if value is undefined
 							logr.error("Bad arguments for contract \"#{name}\", missing param:\"#{param.paramType}\"-\"#{param.description}\" args:#{JSON.stringify(arguments)}")
 							return [name]
 						else message.push(value)
