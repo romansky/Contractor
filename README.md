@@ -45,7 +45,7 @@ Also, you can always check the name of the contract by calling the toString meth
 	=> "LoginMessage"
 
 
-## Layer
+## Lawyer
 
 One option to use Contracts is a Laweyer
 
