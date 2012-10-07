@@ -47,7 +47,7 @@ Also, you can always check the name of the contract by calling the toString meth
 
 ## Lawyer
 
-One option to use Contracts is a Laweyer
+One option to use Contracts is to get yourself a Laweyer
 
 	Lawyer = require('contractor').Lawyer
 
